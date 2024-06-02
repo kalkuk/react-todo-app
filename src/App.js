@@ -51,7 +51,7 @@ const App = () => {
     <div className="container mx-auto mt-16 flex flex-col justify-center items-center bg-white p-16 rounded">
       <div className="relative flex w-full max-w-[24rem]">
             <div className="relative h-10 w-full min-w-[200px]">
-                <input className="input peer h-full w-full rounded-[7px] border border-blue-gray-200  bg-transparent px-3 py-2.5 pr-20 font-normal text-slate-800 outline outline-0 focus:border-2 focus:border-gray-400 " id="newItemName" onKeyDown={event => handleKeyDown(event)} />
+                <input className="input peer h-full w-full rounded-[7px] border border-blue-gray-200  bg-transparent px-3 py-2.5 pr-20 font-normal text-slate-800 outline outline-0 focus:border-2 focus:border-gray-400 placeholder:italic placeholder:text-slate-400" placeholder="Add sth to the list..." id="newItemName" onKeyDown={event => handleKeyDown(event)} />
             </div>
             <div>
                 <button className="absolute right-1 top-1 select-none rounded  py-2 px-4 text-center align-middle text-xs text-white font-bold uppercase bg-blue-600 hover:bg-blue-800 hover:scale-125 " onClick={addItem}>
